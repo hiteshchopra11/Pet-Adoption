@@ -1,8 +1,14 @@
 # Pet Adoption
 
+<!--- You can find both of these in the url bar when you open your repository in github. -->
+![Workflow result](https://github.com/hiteshchopra11/Pet-Adoption/workflows/Check/badge.svg)
+
+
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-Pet Adoption app uses mock data to display list inside app and shares the data to other screen and displays details of the app
+Pet Adoption app displays list of pets which are available to adopt along with their name and breed.
+On clicking the pet, details of the pic are displayed. A button has been provided at
+the end of the details screen to adopt the app.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
