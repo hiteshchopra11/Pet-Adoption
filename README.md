@@ -6,7 +6,7 @@ Pet Adoption app uses mock data to display list inside app and shares the data t
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<img src="/results/screenshot_1.jpeg" width="260">&emsp;<img src="/results/screenshot_2.jpeg" width="260">
 
 ## License
 ```
