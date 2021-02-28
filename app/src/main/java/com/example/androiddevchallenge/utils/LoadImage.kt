@@ -42,7 +42,7 @@ fun loadPicture(url: String, @DrawableRes defaultImage: Int): MutableState<Bitma
             }
 
             override fun onLoadCleared(placeholder: Drawable?) {
-                Log.e("Load Cleared","Load Cleared")
+                Log.e("Load Cleared", "Load Cleared")
             }
         })
 
