@@ -15,7 +15,6 @@
  */
 package com.example.androiddevchallenge
 
-
 import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
@@ -99,7 +98,8 @@ fun MyScreenContent(context: Context) {
 fun AppNavigator(context: Context) {
     val navController = rememberNavController()
 
-    NavHost(navController = navController,
+    NavHost(
+        navController = navController,
         startDestination = "petsList",
         builder = {
             composable("petsList") { PetsList(pets = petsList, navHostController = navController) }
@@ -108,7 +108,8 @@ fun AppNavigator(context: Context) {
                 arguments = listOf(
                     navArgument("device") {
                         type = NavType.StringType
-                    })
+                    }
+                )
             ) { backStackEntry ->
                 backStackEntry.arguments?.getString("petJson")?.let { json ->
                     val pet = Gson().fromJson(json, Pets::class.java)
@@ -125,7 +126,6 @@ fun PetsList(navHostController: NavHostController, pets: List<Pets>) {
         val petJson = Gson().toJson(pet)
         navHostController.navigate("petDetails/$petJson")
     }
-
 
     MaterialTheme {
         val typography = MaterialTheme.typography
@@ -253,7 +253,8 @@ fun PetsDetails(pet: Pets, context: Context) {
                     onClick = {
                         Toast.makeText(context, "Pet Adopted Successfully!!!!!", Toast.LENGTH_SHORT)
                             .show()
-                    }, colors = ButtonDefaults.textButtonColors(
+                    },
+                    colors = ButtonDefaults.textButtonColors(
                         backgroundColor = Color.Red
                     )
                 ) {
@@ -263,4 +264,3 @@ fun PetsDetails(pet: Pets, context: Context) {
         }
     }
 }
-
