@@ -37,7 +37,8 @@ jobs:
         with:
           name: build-reports
           path: app/build/reports
-
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
   test:
     needs: build
     runs-on: macOS-latest # enables hardware acceleration in the virtual machine
