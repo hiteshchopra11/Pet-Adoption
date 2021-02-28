@@ -17,6 +17,7 @@ package com.example.androiddevchallenge.utils
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import android.util.Log
 import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
@@ -41,6 +42,7 @@ fun loadPicture(url: String, @DrawableRes defaultImage: Int): MutableState<Bitma
             }
 
             override fun onLoadCleared(placeholder: Drawable?) {
+                Log.e("Load Cleared","Load Cleared")
             }
         })
 
